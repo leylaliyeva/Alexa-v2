@@ -1,0 +1,10 @@
+python3 KEApp.py &
+python3 KEAppChatGPT.py &
+python3 KEAppClaude.py &
+python3 KEAppGemini.py &
+python3 KEBalancer.py &
+python3 STTApp.py &
+python3 TTSApp.py &
+python3 Alexa.py
+
+kill -9 $(lsof -ti:3001,3004,3005,3006,3007)
